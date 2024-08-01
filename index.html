@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="author" content="Diana Rose Certeza">
+		<title>PUP - Main Kiosk</title>
+        <link rel="icon" href="images/logo.png" type="image">
+        <link href='https://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="contents">
+        <header class="header">
+            <img src="images/logo.png" alt="logo" class="logo">
+            <h1>Pup Kiosk</h1>
+        </header>
+ 
+        <div class="contain-map">
+            <main>
+                <img src="images/main-map.png" alt="PUP Main Campus Map" id="map" usemap="#pupmaincampus" class="main-map">
+                <map name="pupmaincampus">
+                    <area 
+                        shape="rect" 
+                        coords="2134,495,2194,566" 
+                        alt="Pylon"
+                        onmouseover="showModal('images/pylon.png', 'Pylon', 'The Pylon originally stood for the true, the good and the beautiful. The Triad of pillars may also stand for wisdom, strength and beauty because there should be wisdom to contrive, strength to support and beauty to adorn any great or important undertaking. Since 1987, however, the Pylon came to symbolized truth, excellence and wisdom.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="rect" 
+                        coords="1059,1402,1431,1455" 
+                        alt="Nutrion and Food Science"
+                        onmouseover="showModal('images/n-f-science.jpg', 'Nutrition and Food Science Building', 'The College of Nutrition and Food Science at PUP Sta. Mesa, Manila, offers top-notch education and research in nutrition and food science. Dedicated to promoting health and food safety, it equips students with skills for the food industry and public health.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="circle" 
+                        coords="1411,555,50" 
+                        alt="Obelisk"
+                        onmouseover="showModal('images/obelisk.jpg', 'Mabini Monument PUP Obelisk', 'The PUP Obelisk is a prominent landmark at the Polytechnic University of the Philippines (PUP) in Manila. Standing tall and iconic, it symbolizes the history, resilience, and commitment to academic excellence of the university. The Obelisk serves as a focal point for gatherings, celebrations, and events within the PUP community, embodying the spirit of unity and pride among students, faculty, and alumni.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1732,319,1947,330,1932,517,1717,504" 
+                        alt="Tennis Court"
+                        onmouseover="showModal('images/tennis.jpg', 'Tennis Court', 'Situated near the sports complex and other athletic facilities of PUP, the tennis court provides students, faculty, and staff with a venue for recreational and competitive tennis activities. It offers a well-maintained playing surface and is easily accessible within the campus grounds, contributing to the overall sports and recreational amenities available at PUP.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="circle" 
+                        coords="1271,1205,161" 
+                        alt="Chapel"
+                        onmouseover="showModal('images/chapel.jpg', 'Interfaith Chapel', 'An Interfaith Chapel is a sacred space designed to provide a welcoming environment for people of all faiths and beliefs to come together for prayer, reflection, and meditation, fostering spiritual growth, understanding, and respect for diversity.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1497,307,1717,322,1708,464,1491,451" 
+                        alt="Basketball-Volleyball"
+                        onmouseover="showModal('images/bb-vb.jpg', 'Outdoor Basketball and Volleyball Court', 'Situated outside the gymnasium, the outdoor courts offer well-maintained playing surfaces and are easily accessible within the campus grounds. They serve as popular gathering spots for sports enthusiasts and contribute to the vibrant athletic culture at PUP.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1353,87,1615,106,1603,302,1377,289,1345,220" 
+                        alt="Swimming Pool"
+                        onmouseover="showModal('images/pool.jpg', 'Swimming Pool', 'An olympic-sized swimming pool that is capable of handling several swimming classes and student athlete activities simultaneously.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1669,67,1968,88,1968,131,1990,133,1985,236,1957,234,1955,275,1656,254" 
+                        alt="Gym"
+                        onmouseover="showModal('images/gym.jpg', 'Gymnasium and Sports Center', 'The University Gymnasium serves as the training ground for the student athletes that participate in the intercollegiate sports program.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="2026,463,2097,466,2091,539,2022,534" 
+                        alt="Visitor Center"
+                        onmouseover="showModal('images/visitor.png', 'Visitor Information Center', 'Serves as a central hub for visitors seeking information about the university, the Visitor Information Center offers assistance and guidance to guests, including directions, campus maps, event schedules, and other relevant information.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1299,96,1340,100,1334,207,1293,204" 
+                        alt="Tahanan ng Alumni"
+                        onmouseover="showModal('images/alumni.jpg', 'Tahanan ng Alumni', 'PUP Tahanan ng Alumni is created with the goal of serving graduate students of Sintang Paaralan.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1222,28,1287,30,1274,350,1209,350" 
+                        alt="Physical Education"
+                        onmouseover="showModal('images/pe.jpg', 'Physical Education Building', 'The Physical Education Building serves as the main facility for the College of Human Kinetics. This central hub is dedicated to promoting health, fitness, and sports education among students.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1523,643,1635,725,1523,880,1424,826,1471,712,1489,669,1506,660" 
+                        alt="Mabini Shrine"
+                        onmouseover="showModal('images/shrine.jpg', 'Apolinario Mabini Shrine', 'This house of Apolinario Mabini was originally located in Nagtahan, Manila. It was transferred to the Polytechnic University of the Philippines Mabini Campus through the efforts of the Metropolitan Manila Development Authority.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1231,773,1353,661,1370,659,1403,668,1452,668,1474,659,1373,900,1325,934" 
+                        alt="Freedom Park"
+                        onmouseover="showModal('images/freedom.jpg', 'Freedom Park', '  This is where the University flagpole is located and the flag-raising ceremony takes place.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1721,930,1835,771,1886,733,1936,718,1979,713,2011,716,2048,726,2095,754,2129,791,2153,829,2166,879,2168,926,2155,969,2144,997,1889,1349,1837,1386,1781,1403,1729,1403,1661,1382,1605,1334,1572,1279,1560,1227,1566,1167,1583,1124" 
+                        alt="Oval"
+                        onmouseover="showModal('images/oval.jpg', 'Track and Football Oval', 'This state-of-the-art venue is designed to host various track and field events, football matches, and softball games, and even other events held within the campus.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="1678,795,1697,810,1704,802,1717,817,1678,868,1689,877,1656,926,1643,920,1607,971,1588,961,1594,954,1575,939,1615,885,1603,875,1628,842,1641,851" 
+                        alt="Grandstand"
+                        onmouseover="showModal('images/stand.jpg', 'Grandstand', 'This is where audience in the oval sits')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="942,928,697,786,687,805,665,794,618,872,639,885,624,913,867,1056" 
+                        alt="West-wing"
+                        onmouseover="showModal('images/west.jpg', 'West Wing', 'West part of the main building where the office of the university registrar, Office of Scholarship and Financial and Assistance, and other classrooms for in-person classes are located.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="861,1059,790,1102,730,1001,721,1008,704,976,586,1044,611,1081,601,1089,736,1313,736,1313,740,1309,766,1347,880,1281,863,1246,869,1242,816,1147,891,1104" 
+                        alt="South-wing"
+                        onmouseover="showModal('images/south.jpg', 'South Wing', 'South part of the main building where PUP University Information Systems - Network Operations Center and other classrooms for in-person classes are located.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="891,1100,897,1382,930,1382,930,1405,1022,1405,1022,1380,1046,1382,1044,1098" 
+                        alt="East-wing"
+                        onmouseover="showModal('images/east.jpg', 'East Wing', 'East part of the main building where other classrooms for in-person classes are located.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="994,925,1235,786,1246,803,1269,794,1314,872,1295,885,1310,915,1067,1054" 
+                        alt="North-wing"
+                        onmouseover="showModal('images/main.jpg', 'North Wing', 'North part of the main building. Temporary Closed.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="circle" 
+                        coords="968,1028,39" 
+                        alt="Dome"
+                        onmouseover="showModal('images/dome.jpg', 'Dome', 'The spiral ramp within the PUP Main Building that connects the North, West, East, and South wings')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="891,746,940,744,940,731,990,736,1009,766,1003,776,1029,813,1001,822,977,828,942,819,919,802,899,776" 
+                        alt="Amphitheater"
+                        onmouseover="showModal('images/amphi.jpg', 'Amphitheater', 'An open space where students can sit down and relax during their vacant hours. This is also where mini-performances usually take place.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="876,694,921,681,940,681,945,675,947,653,942,615,947,576,966,548,985,537,1016,537,1037,533,1054,526,1056,499,1056,468,1061,398,1093,365,1121,359,1145,363,1190,406,1198,430,1196,462,1173,494,1142,524,1130,533,1130,561,1104,623,1076,664,1039,696,1011,718,992,720,977,731,936,728,921,733,904,737,897,741,878,746" 
+                        alt="Lagoon"
+                        onmouseover="showModal('images/lagoon.jpg', 'Lagoon', 'This scenery is a place inside the PUP Mabini Campus. It is a favorite place of the students to hang out during break time and students with no classes.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="947,544,1052,509,990,327,1166,260,1127,153,953,215,889,24,779,63,848,254" 
+                        alt="Library"
+                        onmouseover="showModal('images/library.jpg', 'Ninoy Aquino Library and Learning Resources Center', 'The name of the library was changed to Ninoy Aquino Learning Resources Center. The University Library Advisory Board was also renamed as Learning Resources Center Advisory Board. The E-Resource Center was established to provide the library clientele free access to internet.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="414,495,465,409,723,562,717,577,730,587,704,637,689,626,678,652" 
+                        alt="Charlie Hall"
+                        onmouseover="showModal('images/charlie.jpg', 'Charlie del Rosario Hall', 'This building is where the Office of the Student Services resides. ID Processing is done here.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="691,1291,521,995,287,263,272,267,536,1108,618,1316" 
+                        alt="Linear Park"
+                        onmouseover="showModal('images/linear.jpg', 'Linear Park', 'PUP Linear Park covers an area of 1.1 acres. This park is suitable for walking. The Pasig River and buildings near the city can be seen here.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="207,117,239,96,291,176,261,197" 
+                        alt="Printing Press"
+                        onmouseover="showModal('images/printing.jpg', 'Printing Press Building', 'The Printing Press Building at PUP Mabini Campus serves as a central facility dedicated to the production of various printed materials for the university community. ')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="835,1458,833,1425,966,1425,966,1458" 
+                        alt="Development and Maintenance"
+                        onmouseover="showModal('images/dev-main.jpg', 'Campus Development and Maintenance Building', 'This is where the Campus Development and Maintenance Office resides.---')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="650,1363,680,1352,710,1432,680,1443,674,1428,661,1434,639,1380,654,1380" 
+                        alt="Ferry Station"
+                        onmouseover="showModal('images/ferry.jpg', 'PUP Sta. Mesa Ferry Station', 'Station for students or faculty to use for transportation using ferry.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="654,1456,493,1024,242,219,95,-1,1,-3,-1,1458" 
+                        alt="Pasig River"
+                        onmouseover="showModal('images/pasig.jpg', 'Pasig River', 'The Pasig River is recognized as a vital waterway in Manila, and its significance is acknowledged by many. Among those are PUP and Ilog Pasiglahin, who recently stepped up to provide rehabilitation projects and environmental activities.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="355,204,411,103,454,37,644,148,624,187,609,215,633,232,609,269,592,297,695,359,674,393" 
+                        alt="Lab-High"
+                        onmouseover="showModal('images/labhigh.jpg', 'Laboratory High School', 'Considered as one of the best Public High School in Manila. With a different kind of curriculum and has produced a lot of successful graduates to date.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="586,626,663,665,631,723,555,678" 
+                        alt="Student Canteen"
+                        onmouseover="showModal('images/st-canteen.jpg', 'Student Canteen', 'An in-house canteen, coffee shop, and other food services from private concessionaires renting food stalls')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="515,674,480,738,502,751,491,764,525,784,534,771,596,805,631,743" 
+                        alt="University Canteen"
+                        onmouseover="showModal('images/univ-canteen.jpg', 'University Canteen Sampaguita Building', 'University Canteen offers take-out food services and reservation for events and meetings')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="2110,1145,2142,1164,2073,1258,2043,1233" 
+                        alt="Community Building"
+                        onmouseover="showModal('images/community.jpg', 'Community Building (Gabriela Silang)', 'The PUP Community Building, also known as the Gabriela Silang Hall, is a prominent structure located inside the PUP Oval in Sta. Mesa, Manila. Named after Gabriela Silang, a Filipino revolutionary leader, the building serves as a hub for various community-related activities and events within the university. ')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="743,140,770,140,792,158,792,186,775,205,747,207,727,190,727,160"
+                        alt="Overhead Water Tank"
+                        onmouseover="showModal('images/o-watertank.jpg', 'R.C. Overhead Water Tank', 'They say that this is the largest thumb tacks (because of the shape) but this is a water tank.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="743,140,770,140,792,158,792,186,775,205,747,207,727,190,727,160"
+                        alt="Overhead Water Tank"
+                        onmouseover="showModal('images/o-watertank.jpg', 'R.C. Overhead Water Tank', 'They say that this is the largest thumb tacks (because of the shape) but this is a water tank.')" 
+                        onmouseout = "removeModal()">
+                    <area 
+                        shape="poly" 
+                        coords="2101,627,2134,627,2134,655,2101,655"
+                        alt="Guardhouse"
+                        onmouseover="showModal('images/guardhouse.jpg', 'Guard House', 'Guard House serves as the main security checkpoint and entry point for visitors and vehicles entering the Main Campus')" 
+                        onmouseout = "removeModal()">
+
+
+                </map>
+                <span id="display"></span>
+            </main>
+        
+        </div>
+    
+        <div id="footer">
+			<footer>
+				<p> Copyright © ️2024 Polytechnic University of the Philippines | Diana Rose A. Certeza</p>
+			</footer>
+		</div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html

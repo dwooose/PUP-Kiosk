@@ -1,0 +1,110 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Cinzel', 'Arial', 'Helvetica', 'sans-serif';
+}
+
+body{
+	overflow: hidden;
+	font-family: 'Cinzel';
+	background-image: linear-gradient(rgb(251, 251, 251), rgba(149, 1, 1, 0.537), rgb(251, 251, 251)),
+    url("images/pupbg.jpg");
+	background-size: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 42%;
+}
+.header h1 {
+	margin-top: 4px;
+	color: #800;
+	font-size: 1.8rem;
+	text-shadow: 2px 2px rgb(181, 178, 178);
+	
+}
+.header .logo {
+	max-width: 50px;
+	height: 2.5rem;
+}
+
+#footer {
+    background-color: rgba(136, 0, 0, 0.618);
+	text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 0.7rem;
+}
+
+.contain-map{
+    margin-top: 3px;
+    justify-content: center;
+}
+
+.main-map{
+    margin-left: 16%;
+    justify-content: center;
+    display: block;
+    box-shadow: 2px 15px 30px;
+	margin-bottom: 10px;
+    height: 515px;
+    width: auto;
+}
+
+area:hover {
+    cursor: pointer;
+}
+
+.map-highlight{
+    border-radius: 0.625rem;
+    filter: grayscale(0.3);
+    background-repeat: no-repeat;
+    outline: 3px dashed black;
+}
+
+#wrapper {
+    position: absolute;
+    width: 190px;
+    box-shadow: 0 2px 5px #000000d6;
+    background-color: #fbfbfbeb;
+}
+
+#display{
+    position: absolute;
+}
+
+#imgid{
+    width: 190px;
+    height: auto;
+    float: left;
+    padding-bottom: 0.80rem;
+} 
+
+#place{
+    color: #710808d6;
+    text-transform: capitalize;
+    text-align: center;
+	font-weight: bolder;
+	font-size: 0.8rem;
+	padding-top: 5rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.80rem;
+    padding-right: 0.80rem;
+}
+
+#details{
+    color: #000000d6;
+    font-family: sans-serif;
+    display: flex;
+    font-size: 0.6rem;
+	margin-top: 1px;
+	text-align: left;
+    padding-left: 0.50rem;
+    padding-right: 0.30rem;
+    padding-bottom: 0.80rem;
+}
